@@ -1,0 +1,65 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  margin: 0;
+  border:none;
+} 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary { 
+  display: block;
+}
+address, caption, cite, code, dfn, em, strong, th, var, b {
+  font-weight: normal;
+  font-style: normal;
+} 
+ol, ul {
+  list-style: none;
+} 
+caption, th {
+  text-align: left;
+} 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+} 
+q:before, q:after {
+  content: "";
+}
+acronym {
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+} 
+input, button, textarea, select, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    vertical-align: middle;
+}
+input, button, select, textarea{
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html {
+  text-size-adjust: 100%;
+}

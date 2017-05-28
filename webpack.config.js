@@ -38,6 +38,7 @@ module.exports = {
       'react-router',
       'react-redux',
       'redux',
+      'styled-components',
       'unfetch',
     ],
   },
@@ -69,6 +70,15 @@ module.exports = {
         options: {
           limit: 10240,
         },
+      },
+      // for static css file
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
+        include: path.resolve(__dirname, 'src/static'),
       },
     ],
   },

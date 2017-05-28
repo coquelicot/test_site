@@ -62,11 +62,13 @@ module.exports = {
         test: /\.jsx?$/,
         loader: 'happypack/loader?id=es6',
         include: path.resolve(__dirname, 'src/'),
-        enforce: 'post',
       },
       {
         test: /\.(png|jpe?g|gif|tiff)$/,
-        loader: 'url-loader?name=[path][name].[ext]',
+        loader: 'url-loader',
+        options: {
+          limit: 10240,
+        },
       },
     ],
   },

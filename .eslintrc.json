@@ -41,6 +41,7 @@
     },
     "globals": {
       "React": false,
+      "styled": false,
       "__DEBUG__": false,
       "__CONFIG__": false
     }

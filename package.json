@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "description": "Test site",
   "scripts": {
-    "build": "webpack",
+    "server": "node src/server/server.js",
+    "build": "npm run build_client && npm run build_server",
+    "build_client": "webpack --config webpack/webpack.config.js",
+    "build_server": "webpack --config webpack/webpack.server.js",
+    "debug_server": "webpack-dev-server --config webpack/webpack.config.js --inline --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fcrh",
